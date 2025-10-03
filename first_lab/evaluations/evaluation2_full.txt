@@ -1,0 +1,9 @@
+Execution time: 0.000209808349609375
+Determinant: -953.99999999999985980
+Benchmark determinant: -954.0000000000013
+Absolute error of determinant: 1.44020E-12
+Relative error of determinant: 1.5096436058700189072E-15
+Stability error: 3.6060069175711164e-09
+Cond A: 6.893516361135211
+Absolute error of solution: 5.581920433062216e-16
+Relative error of solution: 2.2131821090567051e-16
