@@ -1,2 +1,2 @@
 # Ignore .npz files (they're too big)
-.npz
+*.npz
