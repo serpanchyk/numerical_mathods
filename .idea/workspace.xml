@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0d6e554-1b48-4926-a06d-ab0a263ff88f" name="Changes" comment="fix: .gitignore.">
+    <list default="true" id="b0d6e554-1b48-4926-a06d-ab0a263ff88f" name="Changes" comment="feat: add rotation method to second lab">
+      <change afterPath="$PROJECT_DIR$/second_lab/src/tridiagonal.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/first_lab/create_inputs.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/first_lab/data_handler.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/first_lab/gaussian.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/first_lab/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/first_lab/time_calc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/second_lab/evaluations/evaluation1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/second_lab/evaluations/evaluation1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/second_lab/evaluations/evaluation2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/second_lab/evaluations/evaluation2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/second_lab/inputs/input2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/second_lab/inputs/input2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/second_lab/outputs/output2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/second_lab/outputs/output2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/second_lab/src/create_inputs.py" beforeDir="false" afterPath="$PROJECT_DIR$/second_lab/src/create_inputs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/second_lab/src/data_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/second_lab/src/data_handler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/second_lab/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/second_lab/src/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,18 +30,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "serpanchyk"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;serpanchyk&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:serpanchyk/numerical_mathods.git",
-    "accountId": "73373bab-19f9-4724-abe0-32a83b0f4a81"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:serpanchyk/numerical_mathods.git&quot;,
+    &quot;accountId&quot;: &quot;73373bab-19f9-4724-abe0-32a83b0f4a81&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -55,27 +58,30 @@
     "Python.main.executor": "Run",
     "Python.sole_gauss_method.executor": "Run",
     "Python.time_calc.executor": "Run",
+    "Python.tridiagonal.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/serpanok/Documents/3rd semester/numerical methods/second_lab",
+    "last_opened_file_path": "/home/serpanok/Documents/3rd semester/numerical methods/second_lab/inputs",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/second_lab/inputs" />
       <recent name="$PROJECT_DIR$/second_lab" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/first_lab/src" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/first_lab/src" />
       <recent name="$PROJECT_DIR$/first_lab" />
     </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-b3d66beaba9a-c6efb3732140-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.26199.168" />
+        <option value="bundled-python-sdk-164cda30dcd9-0af03a5fa574-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.26830.99" />
       </set>
     </attachedChunks>
   </component>

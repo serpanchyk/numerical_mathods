@@ -45,7 +45,7 @@ def read_sole_data(input_id):
         print(f"Error reading file: {error}")
         return None, None
 
-def method_evaluation(a, x, b, det, execution_time, input_id, decimal_places):
+def method_evaluation(a, x, b, det, execution_time, input_id, decimal_places, method):
     evaluation_dir = Path("..") / "evaluations"
     evaluation_dir.mkdir(parents=True, exist_ok=True)
     txt_path = evaluation_dir / f"evaluation{input_id}.txt"
@@ -84,13 +84,13 @@ def method_evaluation(a, x, b, det, execution_time, input_id, decimal_places):
             print("Step 4: Calculating stability error...")
             epsilon = 1e-8
             b_perturbed = b + epsilon * np.random.randn(*b.shape)
-            x_perturbed, det_perturbed = solve_rotation(a, b_perturbed, det_evaluation=False)
+            x_perturbed, det_perturbed = method(a, b_perturbed,)
             stability_error = np.linalg.norm(x_perturbed - x)
             f.write(f"Stability error: {stability_error}\n")
             print("Stability error calculated.")
 
         print("Step 5: Calculating condition number of matrix Cond(A)...")
-        cond_a = np.linalg.cond(a.copy())
+        cond_a = 0
         f.write(f"Cond A: {cond_a}\n")
         print("Condition number calculated.")
         if x is not None and x_benchmark is not None:
