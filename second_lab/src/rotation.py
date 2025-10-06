@@ -2,7 +2,6 @@ import numpy as np
 from decimal import Decimal, getcontext
 
 def solve_rotation(a, b, det_evaluation=True):
-    print("Starting Gaussian elimination...")
     n = len(a)
     a = a.copy()
     b = b.copy()

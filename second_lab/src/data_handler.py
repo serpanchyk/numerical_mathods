@@ -90,7 +90,7 @@ def method_evaluation(a, x, b, det, execution_time, input_id, decimal_places, me
             print("Stability error calculated.")
 
         print("Step 5: Calculating condition number of matrix Cond(A)...")
-        cond_a = 0
+        cond_a = np.linalg.cond(a)
         f.write(f"Cond A: {cond_a}\n")
         print("Condition number calculated.")
         if x is not None and x_benchmark is not None:

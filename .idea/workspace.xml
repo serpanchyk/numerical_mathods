@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0d6e554-1b48-4926-a06d-ab0a263ff88f" name="Changes" comment="feat: add tdma method to second lab">
+    <list default="true" id="b0d6e554-1b48-4926-a06d-ab0a263ff88f" name="Changes" comment="fix: tdma method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second_lab/evaluations/evaluation5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/second_lab/evaluations/evaluation5.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second_lab/src/tridiagonal.py" beforeDir="false" afterPath="$PROJECT_DIR$/second_lab/src/tridiagonal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/second_lab/evaluations/evaluation1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/second_lab/evaluations/evaluation1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/second_lab/inputs/input1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/second_lab/inputs/input1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/second_lab/inputs/input3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/second_lab/inputs/input3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/second_lab/src/create_inputs.py" beforeDir="false" afterPath="$PROJECT_DIR$/second_lab/src/create_inputs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/second_lab/src/data_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/second_lab/src/data_handler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/second_lab/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/second_lab/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/second_lab/src/rotation.py" beforeDir="false" afterPath="$PROJECT_DIR$/second_lab/src/rotation.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +52,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.calc.executor": "Run",
     "Python.create_inputs.executor": "Run",
     "Python.data_handler.executor": "Run",
     "Python.main.executor": "Run",
@@ -119,7 +125,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759609556552</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix: tdma method">
+      <option name="closed" value="true" />
+      <created>1759610922878</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1759610922878</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -138,6 +152,7 @@
     <MESSAGE value="build: add .gitignore." />
     <MESSAGE value="fix: .gitignore." />
     <MESSAGE value="feat: add tdma method to second lab" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add tdma method to second lab" />
+    <MESSAGE value="fix: tdma method" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: tdma method" />
   </component>
 </project>

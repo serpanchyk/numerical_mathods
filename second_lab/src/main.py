@@ -8,10 +8,10 @@ from data_handler import read_sole_data, method_evaluation, save_solution
 np.seterr(divide='raise', invalid='raise')
 warnings.simplefilter('error', RuntimeWarning)
 
-INPUT_ID = 5
+INPUT_ID = 7
 DECIMAL_PLACES = 60
 IS_EVALUATE = True
-METHOD = solve_tridiagonal
+METHOD = solve_rotation
 
 def main():
     a, b = read_sole_data(INPUT_ID)

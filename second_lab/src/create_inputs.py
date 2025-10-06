@@ -1,9 +1,9 @@
 import numpy as np
 from pathlib import Path
 
-n = 10000
+n = 1000
 ZERO_PERCENTAGE = 0
-INPUT_ID = 5
+INPUT_ID = 7
 GENERATE_TRIDIAGONAL = True
 
 if GENERATE_TRIDIAGONAL:
