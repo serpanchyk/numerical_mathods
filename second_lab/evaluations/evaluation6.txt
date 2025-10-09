@@ -1,6 +1,11 @@
+Method name: solve_rotation
+Matrix size: 10000
 Execution time: 1236.2821786403656
 Determinant: -1.90234275378511636517130122588454606231939799414313156799014e+45212
 Stability error: 6.549300934174995e-09
+Residual norm of solution: 1.8469103904554806e-07
+Relative residual norm: 6.469344624343806e-17
 Cond A: 94557.24950780396
 Absolute error of solution: 1.1022162848667295e-08
 Relative error of solution: 2.1145506894026512e-11
+Machine error for IEEE 754 standard ε ≈ 2.2e-16

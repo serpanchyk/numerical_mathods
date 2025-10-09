@@ -4,7 +4,7 @@ from pathlib import Path
 n = 1000
 ZERO_PERCENTAGE = 0
 INPUT_ID = 7
-GENERATE_TRIDIAGONAL = True
+GENERATE_TRIDIAGONAL = False
 
 if GENERATE_TRIDIAGONAL:
     sub_diag = np.random.uniform(-100, 100, n - 1)

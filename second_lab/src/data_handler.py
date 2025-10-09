@@ -69,6 +69,8 @@ def method_evaluation(a, x, b, det, execution_time, input_id, decimal_places, me
 
     print(f"Step 3: Opening file to write results: {txt_path}")
     with open(txt_path, 'w') as f:
+        f.write(f"Method name: {method.__name__}\n")
+        f.write(f"Matrix size: {a.shape[0]}\n")
         f.write(f"Execution time: {execution_time}\n")
         if det is not None:
             f.write(f"Determinant: {det:.{decimal_places}g}\n")
@@ -89,18 +91,26 @@ def method_evaluation(a, x, b, det, execution_time, input_id, decimal_places, me
             f.write(f"Stability error: {stability_error}\n")
             print("Stability error calculated.")
 
-        print("Step 5: Calculating condition number of matrix Cond(A)...")
+            print("Step 5: Calculating residual norm...")
+            residual_norm = np.linalg.norm(a @ x - b)
+            relative_residual_norm = residual_norm / np.linalg.norm(a) / np.linalg.norm(x)
+            f.write(f"Residual norm of solution: {residual_norm}\n")
+            f.write(f"Relative residual norm: {relative_residual_norm}\n")
+
+
+        print("Step 6: Calculating condition number of matrix Cond(A)...")
         cond_a = np.linalg.cond(a)
         f.write(f"Cond A: {cond_a}\n")
         print("Condition number calculated.")
         if x is not None and x_benchmark is not None:
-            print("Step 6: Calculating solution errors (absolute and relative)...")
+            print("Step 7: Calculating solution errors (absolute and relative)...")
             abs_error_solution = np.linalg.norm(x - x_benchmark)
             rel_error_solution = abs_error_solution / np.linalg.norm(x_benchmark)
             f.write(f"Absolute error of solution: {abs_error_solution}\n")
             f.write(f"Relative error of solution: {rel_error_solution}\n")
             print("Solution errors calculated.")
 
+        f.write(f"Machine error for IEEE 754 standard ε ≈ {2.2e-16}")
     print(f"Evaluation complete. Results saved to {txt_path}'.")
 
 def save_solution(x, input_id, decimal_places):
