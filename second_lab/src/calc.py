@@ -6,6 +6,7 @@
 # tau = T / O(n)
 # tau_b = T_b / O(n_b)
 # print(tau * O(n_b) / 60 / 5)
+import numpy as np
 
 # import numpy as np
 #
@@ -25,4 +26,12 @@
 # print(f"Residual norm of solution: {residual_norm}\n")
 # print(f"Relative residual norm: {relative_residual_norm}\n")
 
-print(94557.24950780396 * 2.2e-16)
+
+data = np.load("../inputs/input5.npz")
+a = data["a"]
+b = data["b"]
+a[0, 0] = 1
+a[-1, -1] = 1
+n = 10000
+np.savez_compressed("../inputs/input5.npz", a=a, b=b)
+

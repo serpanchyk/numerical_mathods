@@ -4,21 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0d6e554-1b48-4926-a06d-ab0a263ff88f" name="Changes" comment="fix: end lab">
+    <list default="true" id="b0d6e554-1b48-4926-a06d-ab0a263ff88f" name="Changes" comment="feat: add residual norm evaluation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second_lab/evaluations/evaluation1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/second_lab/evaluations/evaluation1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second_lab/evaluations/evaluation2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/second_lab/evaluations/evaluation2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second_lab/evaluations/evaluation3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/second_lab/evaluations/evaluation3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second_lab/evaluations/evaluation4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/second_lab/evaluations/evaluation4.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/second_lab/evaluations/evaluation5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/second_lab/evaluations/evaluation5.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second_lab/evaluations/evaluation6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/second_lab/evaluations/evaluation6.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second_lab/evaluations/evaluation7.txt" beforeDir="false" afterPath="$PROJECT_DIR$/second_lab/evaluations/evaluation7.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second_lab/inputs/input7.txt" beforeDir="false" afterPath="$PROJECT_DIR$/second_lab/inputs/input7.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second_lab/outputs/output7.txt" beforeDir="false" afterPath="$PROJECT_DIR$/second_lab/outputs/output7.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/second_lab/src/calc.py" beforeDir="false" afterPath="$PROJECT_DIR$/second_lab/src/calc.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/second_lab/src/create_inputs.py" beforeDir="false" afterPath="$PROJECT_DIR$/second_lab/src/create_inputs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second_lab/src/data_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/second_lab/src/data_handler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second_lab/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/second_lab/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/second_lab/src/tridiagonal.py" beforeDir="false" afterPath="$PROJECT_DIR$/second_lab/src/tridiagonal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/second_lab/Лаб 2. Чисельні методи Михальчук Антон ШІ-22.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/second_lab/Лаб 2. Чисельні методи Михальчук Антон ШІ-22.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +26,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {

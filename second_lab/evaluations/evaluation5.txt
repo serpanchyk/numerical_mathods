@@ -1,11 +1,11 @@
 Method name: solve_tridiagonal
 Matrix size: 10000
-Execution time: 43.23996567726135
-Determinant: -2.00671887015582605767111674043490804867369808367372471914371e+21425
-Stability error: 1.1158429824524364e-08
-Residual norm of solution: 9.67577627460389e-13
-Relative residual norm: 8.3050695118548005e-19
-Cond A: 59.19950597606809
-Absolute error of solution: 1.2416103307669733e-14
-Relative error of solution: 1.890832247590047e-16
+Execution time: 20.94722890853882
+Determinant: -5.22083987533952422552967691340024147612450039199648550931121e+21423
+Stability error: 1.139884987228621e-08
+Residual norm of solution: 1.1990693619808691e-12
+Relative residual norm: 1.0164093631478534e-18
+Cond A: 59.19950597606899
+Absolute error of solution: 2.1741970433094974e-14
+Relative error of solution: 3.2697504197096675e-16
 Machine error for IEEE 754 standard ε ≈ 2.2e-16

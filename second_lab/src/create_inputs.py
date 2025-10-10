@@ -25,6 +25,8 @@ if GENERATE_TRIDIAGONAL:
     np.fill_diagonal(a, main_diag)
     np.fill_diagonal(a[1:], sub_diag)
     np.fill_diagonal(a[:, 1:], super_diag)
+    a[0, 0] = 1
+    a[-1, -1] = 1
 
     f = np.random.uniform(-100, 100, n)
 
