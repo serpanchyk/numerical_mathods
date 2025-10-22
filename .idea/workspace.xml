@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0d6e554-1b48-4926-a06d-ab0a263ff88f" name="Changes" comment="feat: add residual norm evaluation">
+    <list default="true" id="b0d6e554-1b48-4926-a06d-ab0a263ff88f" name="Changes" comment="feat: change tridiagonal matrix method to be medium">
+      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.edit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/third_lab/inputs/input1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/third_lab/inputs/input2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/third_lab/src/create_inputs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/third_lab/src/data_handler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/third_lab/src/jacobi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/third_lab/src/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second_lab/evaluations/evaluation5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/second_lab/evaluations/evaluation5.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second_lab/src/calc.py" beforeDir="false" afterPath="$PROJECT_DIR$/second_lab/src/calc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second_lab/src/create_inputs.py" beforeDir="false" afterPath="$PROJECT_DIR$/second_lab/src/create_inputs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second_lab/src/tridiagonal.py" beforeDir="false" afterPath="$PROJECT_DIR$/second_lab/src/tridiagonal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/second_lab/Лаб 2. Чисельні методи Михальчук Антон ШІ-22.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/second_lab/Лаб 2. Чисельні методи Михальчук Антон ШІ-22.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +56,7 @@
     &quot;Python.calc.executor&quot;: &quot;Run&quot;,
     &quot;Python.create_inputs.executor&quot;: &quot;Run&quot;,
     &quot;Python.data_handler.executor&quot;: &quot;Run&quot;,
+    &quot;Python.jacobi.executor&quot;: &quot;Run&quot;,
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
     &quot;Python.sole_gauss_method.executor&quot;: &quot;Run&quot;,
     &quot;Python.time_calc.executor&quot;: &quot;Run&quot;,
@@ -61,13 +64,23 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/serpanok/Documents/3rd semester/numerical methods/second_lab/inputs&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+    &quot;last_opened_file_path&quot;: &quot;/home/serpanok/Documents/3rd semester/numerical methods/third_lab/inputs&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.github.copilot.settings.completions.CompletionsConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/third_lab/inputs" />
+      <recent name="$PROJECT_DIR$/third_lab/evaluations" />
+      <recent name="$PROJECT_DIR$/third_lab" />
       <recent name="$PROJECT_DIR$/second_lab/inputs" />
       <recent name="$PROJECT_DIR$/second_lab" />
     </key>
@@ -80,6 +93,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-PY-252.26830.99" />
         <option value="bundled-python-sdk-164cda30dcd9-0af03a5fa574-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.26830.99" />
       </set>
     </attachedChunks>
@@ -91,6 +105,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1758710570291</updated>
+      <workItem from="1761049195132" duration="23204000" />
+      <workItem from="1761115976289" duration="3031000" />
     </task>
     <task id="LOCAL-00001" summary="feat: make first lab implement gaussian method of solving SOLE.">
       <option name="closed" value="true" />
@@ -140,8 +156,19 @@
       <option name="project" value="LOCAL" />
       <updated>1759763465224</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feat: change tridiagonal matrix method to be medium">
+      <option name="closed" value="true" />
+      <created>1760113381422</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1760113381422</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -162,6 +189,12 @@
     <MESSAGE value="fix: tdma method" />
     <MESSAGE value="fix: make report to the second lab" />
     <MESSAGE value="fix: make report to the second lab" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: make report to the second lab" />
+    <MESSAGE value="feat: change tridiagonal matrix method to be medium" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: change tridiagonal matrix method to be medium" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/numerical_methods$create_inputs.coverage" NAME="create_inputs Coverage Results" MODIFIED="1761072621674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/third_lab/src" />
+    <SUITE FILE_PATH="coverage/numerical_methods$jacobi.coverage" NAME="jacobi Coverage Results" MODIFIED="1761117982907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/third_lab/src" />
+    <SUITE FILE_PATH="coverage/numerical_methods$main.coverage" NAME="main Coverage Results" MODIFIED="1761118249171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/third_lab/src" />
   </component>
 </project>

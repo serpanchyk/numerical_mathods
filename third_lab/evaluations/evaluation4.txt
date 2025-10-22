@@ -1,0 +1,15 @@
+Method name: solve_jacobi
+Machine error for IEEE 754 standard ε ≈ 2.2e-16
+Matrix size: 10000
+Execution time: 564.2891175746918
+Count of iterations: 1
+Spectral radius: 0.007270875676247319
+Cond A: 1.0501832712435737
+1-norm (col-sum): 0.6384462993931148
+2-norm (spectral): 0.01441673123976976
+inf-norm (row-sum): 0.6250000000000002
+Stability error: 1.2416406271250354e-10
+Residual norm of solution: 0.030661016654070734
+Relative residual norm: 5.314551587512221e-07
+Absolute error of solution: 3.832891118647278e-06
+Relative error of solution: 5.3144683928474914e-05

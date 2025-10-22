@@ -1,0 +1,15 @@
+Method name: solve_jacobi
+Machine error for IEEE 754 standard ε ≈ 2.2e-16
+Matrix size: 3
+Execution time: 0.011384963989257812
+Count of iterations: 969
+Spectral radius: 2.0816659994661326
+Cond A: 3.5051002879120627
+1-norm (col-sum): 4.0
+2-norm (spectral): 3.1622776601683795
+inf-norm (row-sum): 3.0
+Stability error: Could not be calculated due to divergence.
+Residual norm of solution: Could not be calculated due to divergence.
+Relative residual norm: Could not be calculated due to divergence.
+Absolute error of solution: Could not be calculated due to divergence.
+Relative error of solution: Could not be calculated due to divergence.
