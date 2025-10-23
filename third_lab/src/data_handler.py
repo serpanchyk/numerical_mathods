@@ -43,14 +43,7 @@ def read_sole_data(input_id):
         print(f"Error reading file: {error}")
         return None, None
 
-def method_evaluation(a, x, b, evals, execution_time, input_id, method):
-    """
-    Write evaluation results to a text file. 'evals' is a dictionary produced by solver
-    and may contain keys like:
-      iterations, converged, spectral_radius, spectral_vector, cond, norms,
-      residual_norm, relative_residual_norm, diagonal_dominance, a_priori_iterations_estimate, epsilon, matrix_size, benchmark (flag)
-    If evals.get('benchmark') is True, method_evaluation computes benchmark solution and stability errors.
-    """
+def method_evaluation(a, x, b, evals, eval_options, execution_time, input_id, method):
     evaluation_dir = Path("..") / "evaluations"
     evaluation_dir.mkdir(parents=True, exist_ok=True)
     txt_path = evaluation_dir / f"evaluation{input_id}.txt"
@@ -64,26 +57,18 @@ def method_evaluation(a, x, b, evals, execution_time, input_id, method):
         f.write(f"Converged: {evals.get('converged', 'N/A')}\n")
         f.write(f"Epsilon used: {evals.get('epsilon', 'N/A')}\n\n")
 
-        # Write simple scalar entries first
         scalar_keys = ['spectral_radius', 'cond', 'residual_norm', 'relative_residual_norm',
                        'a_priori_iterations_estimate', 'diagonal_dominance']
         for key in scalar_keys:
             if key in evals:
                 f.write(f"{key}: {evals[key]}\n")
 
-        # Norms (nested dict)
         if 'norms' in evals and isinstance(evals['norms'], dict):
             f.write("\nNorms of iteration matrix C:\n")
             for nkey, nval in evals['norms'].items():
                 f.write(f"  {nkey}: {nval}\n")
 
-        # Spectral vector (if present)
-        if 'spectral_vector' in evals and evals['spectral_vector'] is not None:
-            f.write("\nSpectral vector (approx):\n")
-            f.write(str(evals['spectral_vector']) + "\n")
-
-        # Benchmark solution and solution errors (optional)
-        if evals.get('benchmark', False):
+        if eval_options.get('benchmark', True):
             try:
                 x_benchmark = np.linalg.solve(a, b)
                 abs_err = float(np.linalg.norm(x - x_benchmark))
@@ -94,11 +79,11 @@ def method_evaluation(a, x, b, evals, execution_time, input_id, method):
             except Exception:
                 f.write("\nBenchmark solution could not be computed (singular or unstable matrix).\n")
 
-            # Stability test by solving perturbed system directly (does not re-run the iterative method)
+        if eval_options.get('stability_error', True) and x is not None:
             try:
                 epsilon = 1e-8
                 b_perturbed = b + epsilon * np.random.randn(*b.shape)
-                x_perturbed = np.linalg.solve(a, b_perturbed)
+                x_perturbed, _ = method(a, b_perturbed)
                 stability_error = float(np.linalg.norm(x_perturbed - x))
                 f.write(f"Stability error (solving perturbed system): {stability_error}\n")
             except Exception:
@@ -107,3 +92,22 @@ def method_evaluation(a, x, b, evals, execution_time, input_id, method):
         f.write("\nEnd of evaluation.\n")
 
     print(f"Evaluation complete. Results saved to {txt_path}")
+
+def save_solution(x, input_id, decimal_places):
+    output_dir = Path("..") / "outputs"
+    output_dir.mkdir(parents=True, exist_ok=True)
+    npz_path = output_dir / f"output{input_id}.npz"
+    txt_path = output_dir / f"output{input_id}.txt"
+
+    if x is not None:
+        n = len(x)
+        if n > 1000:
+            np.savez_compressed(npz_path, x=x)
+            print(f"Solution saved to {npz_path}")
+        else:
+            np.savetxt(txt_path, x, fmt=f'%.{decimal_places}g')
+            print(f"Solution saved to {txt_path}")
+    else:
+        with open(txt_path, 'w') as f:
+            f.write("Matrix is singular.")
+        print(f"Matrix is singular. Saved to {txt_path}")

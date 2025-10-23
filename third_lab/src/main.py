@@ -7,21 +7,20 @@ from data_handler import read_sole_data, method_evaluation, save_solution
 np.seterr(divide='raise', invalid='raise')
 warnings.simplefilter('error', RuntimeWarning)
 
-INPUT_ID = 2
+INPUT_ID = 1
 DECIMAL_PLACES = 60
-IS_EVALUATE = True
 METHOD = solve_jacobi
-EPSILON = 1e-10
+EPSILON = 10e-15
 
-# Example evaluation options: toggle keys to turn off/on evaluations
 EVAL_OPTIONS = {
     'cond': True,
     'spectral_radius': True,
-    'spectral_vector': False,
     'norms': True,
     'residual': True,
     'benchmark': True,
-    'a_priori': True
+    'iterations': True,
+    'a_priori': True,
+    'stability_error': True
 }
 
 def main():
@@ -30,14 +29,11 @@ def main():
         return
 
     start_time = time.time()
-    x, k, evals = METHOD(a, b, eps=EPSILON, eval_options=EVAL_OPTIONS)
+    x, evals = METHOD(a, b, eps=EPSILON, eval_options=EVAL_OPTIONS)
     end_time = time.time()
     execution_time = end_time - start_time
 
-    if IS_EVALUATE:
-        method_evaluation(a, x, b, evals, execution_time, INPUT_ID, METHOD)
-    else:
-        print(f"Execution time: {execution_time}\n")
+    method_evaluation(a, x, b, evals, EVAL_OPTIONS, execution_time, INPUT_ID, METHOD)
 
     save_solution(x, INPUT_ID, DECIMAL_PLACES)
 
