@@ -1,23 +1,26 @@
 Method name: solve_jacobi
 Machine error for IEEE 754 standard ε ≈ 2.2e-16
 Matrix size: 3
-Execution time: 0.013342857360839844
-Iterations: 969
-Converged: False
-Epsilon used: 1e-10
+Execution time: 0.060114383697509766
+Iterations: 184
+Converged: True
+Epsilon used: 1e-14
 
-spectral_radius: 2.0816659994661326
+spectral_radius: 0.8469204725567879
 cond: 3.5051002879120627
-residual_norm: None
-relative_residual_norm: None
-diagonal_dominance: False
+residual_norm: 2.963566048481161e-13
+relative_residual_norm: 1.837704776599161e-14
+a_priori_iterations_estimate: 1100
+diagonal_dominance: True
 
 Norms of iteration matrix C:
-  1-norm (col-sum): 4.0
-  2-norm (spectral): 3.1622776601683795
-  inf-norm (row-sum): 3.0
+  1-norm (col-sum): 1.1636363636363636
+  2-norm (spectral): 0.9322213721575836
+  inf-norm (row-sum): 0.9696969696969697
 
-Benchmark solution could not be computed (singular or unstable matrix).
-Stability error: Could not be calculated due to singularity or instability.
+Benchmark solution available.
+Absolute error vs benchmark: 6.410497349061475e-14
+Relative error vs benchmark: 3.4654501383133245e-14
+Stability error (solving perturbed system): 3.4177662482722554e-09
 
 End of evaluation.

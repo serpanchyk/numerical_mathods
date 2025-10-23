@@ -7,7 +7,7 @@ from data_handler import read_sole_data, method_evaluation, save_solution
 np.seterr(divide='raise', invalid='raise')
 warnings.simplefilter('error', RuntimeWarning)
 
-INPUT_ID = 1
+INPUT_ID = 2
 DECIMAL_PLACES = 60
 METHOD = solve_jacobi
 EPSILON = 10e-15
