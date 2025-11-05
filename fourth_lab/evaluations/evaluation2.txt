@@ -1,0 +1,12 @@
+Method name: solve_inverse_iteration
+Machine error for IEEE 754 standard ε ≈ 2.2e-16
+Convergence: True
+Matrix_size: 4
+Tolerance: 1e-06
+Execution_time_sec: 0.0030260086059570312
+Iterations: 15
+Residual_norm: 4.0048719483987504e-07
+Cond: 7.650000218244573
+Benchmark value: 1.7242366720803632
+Absolute error: 4.107825191113079e-14
+Relative error: 2.3824021711339763e-14

@@ -1,0 +1,10 @@
+Method name: solve_jacobi
+Machine error for IEEE 754 standard ε ≈ 2.2e-16
+Convergence: True
+Matrix_size: 4
+Tolerance: 1e-06
+Execution_time_sec: 0.005814790725708008
+Cond: 7.650000218244573
+Iterations: 24
+Absolute_error: 1.1751594028907457e-14
+Relative_error: 7.010413256617608e-16
